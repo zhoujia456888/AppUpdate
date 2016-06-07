@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "cn.zhoujia.appupdate"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.github.zhaokaiqiang.klog:library:1.4.0'//Klog日志打印
+    compile 'com.afollestad.material-dialogs:core:0.8.5.9'//dialog
+    compile 'com.jakewharton:butterknife:7.0.1' //布局注入框架
+    compile 'sexy.code:httpizza:0.3.0' //Http
+    compile 'com.google.code.gson:gson:2.2.2'//Gson
+}

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppUpdate</string>
+    <string name="neterror">网络错误</string>
+    <string name="neterrorinfo">检测到你目前尚未链接网络</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="uptate_title">软件更新</string>
+    <string name="no_uptate">已经是最新版本</string>
+</resources>
